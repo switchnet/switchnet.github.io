@@ -3,15 +3,21 @@
 <head>
   <title>SwitchNet Landing Page</title>
     <style>
+        @keyframes colorChange {
+            0% { background-color: darkblue; }
+            50% { background-color: lightblue; }
+            100% { background-color: darkblue; }
+        }
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: darkblue;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            animation: colorChange 5s infinite;
         }
         .container {
             text-align: center;
@@ -26,12 +32,16 @@
             text-decoration: none;
             color: #333;
             font-size: 18px;
+            transition: color 0.5s ease;
+        }
+        a:hover {
+            color: darkblue;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to SwitchNet!</h1>
+        <h1>Willkommen bei SwitchNet!</h1>
         <a href="https://www.link1.com">Link 1</a>
         <a href="https://www.link2.com">Link 2</a>
         <a href="https://www.link3.com">Link 3</a>
